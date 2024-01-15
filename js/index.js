@@ -75,7 +75,6 @@ document.getElementById('calcularNotasParcial').addEventListener('submit', funct
 
     if ((nota1 >= 0 && nota1 <= 5.0) && (nota2 >= 0 && nota2 <= 5.0) && (nota3 >= 0 && nota3 <= 5.0)) {
         let resultado = (nota3 - ((nota1 * PORCENTAJE_TAREAS) + (nota2 * PORCENTAJE_AUTOEVALUACION))) / PORCENTAJE_EXAMEN;
-        if (resultado < 1) resultado *= 10;
         resultado = Math.trunc(resultado * Math.pow(10, CANTIDAD_DECIMALES)) / Math.pow(10, CANTIDAD_DECIMALES);
 
         if (resultado >= 0 && resultado <= 5.0) {
