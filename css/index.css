@@ -1,0 +1,22 @@
+body{
+    background-color: #E9F1E4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: white;
+}
+
+@media only screen and (max-width: 455px) {
+    body {
+        min-height: auto;
+    }
+    #fill-tab-1, #fill-tab-2, #fill-tab-3 {
+        margin-top: 1rem;
+    }
+  }
